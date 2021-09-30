@@ -9,6 +9,10 @@ Simulate RAM (client), Hard disc(server) and MMU work when page-fault or page-re
 
 When you first initialize the unit, you choose a replacement algorithm for the MMU (implemented with Java-Generics).
 
+## Goal
+The purpose of this project is to implement the memory management unit (or something similar ) in the software operating system only, while
+Use of object-oriented programming principles, pattern design, libraries and data structures built into JAVA.
+
 ## Technologies
 
 This project uses Client-Server communication, OOP, Multi-threaded, GUI (Swing) in Java.
@@ -30,5 +34,9 @@ If the memory controller detects that the requested page is not mapped to the ma
 The need to refer to a particular address in memory stems from two main sources:
 
 - Access to the next program instruction to execute.
-- Access data by instruction from the program
+- Access data by instruction from the program.
+
+When a page from the secondary memory has to be loaded but all the existing pages in the physical memory are occupied, one of the pages must be replaced with the requested page. The paging system uses a replacement algorithm to determine which page to replace. There are several algorithms trying to solve this problem.
+
+
 

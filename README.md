@@ -21,5 +21,14 @@ In order to perform the paging process the operating system uses the MMU unit, w
 
 If the memory controller detects that the requested page is not mapped to the main memory, a page fault is created, and the memory controller raises appropriate interrupt in rder to load the requested page from the secondary memory. The operating system executes the following:
 
-- 
+- Determine the location of the data in the secondary storage devices.
+- If the main memory is full, select a page to remove from the main memory.
+- Load the requested data into the main memory.
+- Update the page table with the new data.
+- Ending the interrupt handling.
+
+The need to refer to a particular address in memory stems from two main sources:
+
+- Access to the next program instruction to execute.
+- Access data by instruction from the program
 

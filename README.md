@@ -10,8 +10,8 @@ Simulate RAM (client), Hard disc(server) and MMU work when page-fault or page-re
 When you first initialize the unit, you choose a replacement algorithm for the MMU (implemented with Java-Generics).
 
 ## Goal
-The purpose of this project is to implement the memory management unit (or something similar ) in the software operating system only, while
-Use of object-oriented programming principles, pattern design, libraries and data structures built into JAVA.
+The purpose of this project is to implement the memory management unit (or something similar) in the software operating system only, while
+Use of object-oriented programming principles, pattern design, libraries and built-in data structures in JAVA.
 
 ## Technologies
 
